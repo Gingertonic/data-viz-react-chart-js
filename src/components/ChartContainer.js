@@ -26,7 +26,7 @@ export default class ChartContainer extends Component {
 
     renderDataButtons = () => {
         return ( this.state.allData.map(d => {
-                return <DataButton hanClik={this.hanClik} val={d} />
+                return <DataButton key={d.name} hanClik={this.hanClik} val={d} />
             }))
     }
 
